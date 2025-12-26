@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Vetale Browser Lite/Vetale Browser Lite.csproj" Id="ba447e35-d8e3-455e-b6dd-c6e1208dc435">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+</Solution>
