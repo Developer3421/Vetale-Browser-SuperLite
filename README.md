@@ -71,6 +71,10 @@ This project embeds a Chromium engine (CefSharp). Embedded browser components ma
 4. Run the app
 
 ---
+## Download and run (Zip Archiv)
+1.Download archive
+2. Extract and run the main exe file
+https://drive.google.com/file/d/1QiuKZDTqRNGlOYC-Jrfyu-e0mzfjl3RR/view?usp=drive_link
 
 ## External services
 
