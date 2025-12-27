@@ -100,3 +100,10 @@ Developer: **vetalebrowser01@gmail.com**
 ---
 
 ## License
+
+This project uses a custom license:
+- **Source code can be copied and reused**
+- **Design/UI and visual resources must not be copied**
+
+See: `LICENSE_SUPERLITE.md`
+
