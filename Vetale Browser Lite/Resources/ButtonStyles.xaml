@@ -1,7 +1,7 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <!-- Градієнти -->
+    <!-- Gradients -->
     <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
         <GradientStop Color="#FFE0E0E0" Offset="0"/>
         <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
@@ -23,25 +23,25 @@
         <GradientStop Color="#FF8A2BE2" Offset="1"/>
     </LinearGradientBrush>
 
-    <!-- Активна вкладка градієнт -->
+    <!-- Active tab gradient -->
     <LinearGradientBrush x:Key="ActiveTabGradient" StartPoint="0,0" EndPoint="0,1">
         <GradientStop Color="#DDD6FE" Offset="0"/>
         <GradientStop Color="#C4B5FD" Offset="1"/>
     </LinearGradientBrush>
 
-    <!-- Неактивна вкладка градієнт -->
+    <!-- Inactive tab gradient -->
     <LinearGradientBrush x:Key="InactiveTabGradient" StartPoint="0,0" EndPoint="0,1">
         <GradientStop Color="#F3F4F6" Offset="0"/>
         <GradientStop Color="#E5E7EB" Offset="1"/>
     </LinearGradientBrush>
 
-    <!-- Hover вкладка градієнт -->
+    <!-- Hover tab gradient -->
     <LinearGradientBrush x:Key="HoverTabGradient" StartPoint="0,0" EndPoint="0,1">
         <GradientStop Color="#FAF9FF" Offset="0"/>
         <GradientStop Color="#F3F1FF" Offset="1"/>
     </LinearGradientBrush>
 
-    <!-- Кольори -->
+    <!-- Colors -->
     <SolidColorBrush x:Key="NavigationButtonBackground" Color="#FF6D00"/>
     <SolidColorBrush x:Key="NavigationButtonHover" Color="#FF8800"/>
     <SolidColorBrush x:Key="NavigationButtonPressed" Color="#FF5500"/>
@@ -59,9 +59,9 @@
     <SolidColorBrush x:Key="TabIconBackground" Color="#A78BFA"/>
     <SolidColorBrush x:Key="TabBorder" Color="#A78BFA"/>
 
-    <!-- Стилі кнопок -->
+    <!-- Button Styles -->
     
-    <!-- Кнопка навігації (Назад, Вперед, Оновити) -->
+    <!-- Navigation button (Back, Forward, Refresh) -->
     <Style x:Key="NavigationButtonStyle" TargetType="Button">
         <Setter Property="Width" Value="32"/>
         <Setter Property="Height" Value="32"/>
@@ -90,7 +90,7 @@
         </Style.Triggers>
     </Style>
 
-    <!-- Кнопка іконки (Домівка, Інструменти, Налаштування) -->
+    <!-- Icon button (Home, Tools, Settings) -->
     <Style x:Key="IconButtonStyle" TargetType="Button">
         <Setter Property="Width" Value="32"/>
         <Setter Property="Height" Value="32"/>
@@ -118,7 +118,7 @@
         </Style.Triggers>
     </Style>
 
-    <!-- Кнопка закриття вікна -->
+    <!-- Window close button -->
     <Style x:Key="WindowCloseButtonStyle" TargetType="Button">
         <Setter Property="Width" Value="40"/>
         <Setter Property="Height" Value="28"/>
@@ -145,7 +145,7 @@
         </Style.Triggers>
     </Style>
 
-    <!-- Кнопка мінімізації/максимізації вікна -->
+    <!-- Window minimize/maximize button -->
     <Style x:Key="WindowControlButtonStyle" TargetType="Button">
         <Setter Property="Width" Value="40"/>
         <Setter Property="Height" Value="28"/>
@@ -172,7 +172,7 @@
         </Style.Triggers>
     </Style>
 
-    <!-- Стиль адресної строки -->
+    <!-- Address bar style -->
     <Style x:Key="AddressBarStyle" TargetType="TextBox">
         <Setter Property="Background" Value="{StaticResource AddressBarBackground}"/>
         <Setter Property="Foreground" Value="{StaticResource AddressBarForeground}"/>
