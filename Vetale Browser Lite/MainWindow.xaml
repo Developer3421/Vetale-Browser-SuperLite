@@ -15,7 +15,7 @@
         UseLayoutRounding="True">
 
     <Window.Resources>
-        <!-- Градієнти -->
+        <!-- Gradients -->
         <LinearGradientBrush x:Key="GrayGradient" StartPoint="0,0" EndPoint="1,1">
             <GradientStop Color="#FFE0E0E0" Offset="0"/>
             <GradientStop Color="#FFD0D0D0" Offset="0.3"/>
@@ -30,7 +30,7 @@
             <GradientStop Color="#FF8612D0" Offset="1"/>
         </LinearGradientBrush>
 
-        <!-- Кольори -->
+        <!-- Colors -->
         <SolidColorBrush x:Key="NavigationButtonBackground" Color="#FF6D00"/>
         <SolidColorBrush x:Key="NavigationButtonHover" Color="#FF8800"/>
         <SolidColorBrush x:Key="IconButtonBackground" Color="#20A78BFA"/>
@@ -39,7 +39,7 @@
         <SolidColorBrush x:Key="AddressBarForeground" Color="#4C1D95"/>
         <SolidColorBrush x:Key="AddressBarFocusBorder" Color="#A78BFA"/>
 
-        <!-- Стилі кнопок -->
+        <!-- Button Styles -->
         <Style x:Key="NavigationButtonStyle" TargetType="Button">
             <Setter Property="Width" Value="40"/>
             <Setter Property="Height" Value="40"/>
