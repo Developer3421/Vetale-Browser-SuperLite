@@ -54,18 +54,8 @@ This project embeds a Chromium engine (CefSharp). Embedded browser components ma
 **Important:** the app is built using an embedded/older web component in some environments. Full security cannot be guaranteed. **Use at your own risk.**
 
 ---
-
-
-
-## Build and run (Visual Studio)
-
-1. Open the solution in **Visual Studio 2026**
-2. Restore **NuGet** packages
-3. Build **Release | x64**
-4. Run the app
-
 ---
-## Download and run (Zip Archiv)
+## Download 
 - Microsoft Store: https://apps.microsoft.com/detail/9NZPNGDCQX2P
 
 ## External services
