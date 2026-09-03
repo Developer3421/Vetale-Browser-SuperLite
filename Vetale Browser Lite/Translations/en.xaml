@@ -1,0 +1,30 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:String x:Key="Title_History">Browsing history</system:String>
+    <system:String x:Key="History_TitleA">Browsing </system:String>
+    <system:String x:Key="History_TitleB">history</system:String>
+    <system:String x:Key="Title_Bookmarks">Bookmarks</system:String>
+    <system:String x:Key="Bookmarks_TitleA">My </system:String>
+    <system:String x:Key="Bookmarks_TitleB">bookmarks</system:String>
+    <system:String x:Key="Title_AddBookmark">Add bookmark</system:String>
+    <system:String x:Key="Add_TitleA">Add </system:String>
+    <system:String x:Key="Add_TitleB">bookmark</system:String>
+    <system:String x:Key="Label_Name">Name:</system:String>
+    <system:String x:Key="Label_Url">Address:</system:String>
+    <system:String x:Key="Btn_Clear">Clear</system:String>
+    <system:String x:Key="Btn_Open">Open</system:String>
+    <system:String x:Key="Btn_Close">Close</system:String>
+    <system:String x:Key="Btn_Delete">Delete</system:String>
+    <system:String x:Key="Btn_Save">Save</system:String>
+    <system:String x:Key="Btn_Cancel">Cancel</system:String>
+    <system:String x:Key="Tip_History">Browsing history</system:String>
+    <system:String x:Key="Tip_Home">Home (DuckDuckGo)</system:String>
+    <system:String x:Key="Tip_AddBookmark">Add bookmark</system:String>
+    <system:String x:Key="Tip_Bookmarks">Bookmarks</system:String>
+    <system:String x:Key="Guard_Title">Redirect protection</system:String>
+    <system:String x:Key="Guard_Text" xml:space="preserve">The site is trying to redirect you:&#x0a;&#x0a;{0}&#x0a;  →  {1}&#x0a;&#x0a;Allow navigation?</system:String>
+    <system:String x:Key="Msg_Title">Bookmarks</system:String>
+    <system:String x:Key="Msg_UrlMissing">Enter the page address.</system:String>
+    <system:String x:Key="Msg_AlreadyExists">This bookmark already exists or the address is invalid.</system:String>
+</ResourceDictionary>

@@ -1,0 +1,30 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:String x:Key="Title_History">Gezinme geçmişi</system:String>
+    <system:String x:Key="History_TitleA">Gezinme </system:String>
+    <system:String x:Key="History_TitleB">geçmişi</system:String>
+    <system:String x:Key="Title_Bookmarks">Yer imleri</system:String>
+    <system:String x:Key="Bookmarks_TitleA">Yer </system:String>
+    <system:String x:Key="Bookmarks_TitleB">imlerim</system:String>
+    <system:String x:Key="Title_AddBookmark">Yer imi ekle</system:String>
+    <system:String x:Key="Add_TitleA">Yer imi </system:String>
+    <system:String x:Key="Add_TitleB">ekle</system:String>
+    <system:String x:Key="Label_Name">Ad:</system:String>
+    <system:String x:Key="Label_Url">Adres:</system:String>
+    <system:String x:Key="Btn_Clear">Temizle</system:String>
+    <system:String x:Key="Btn_Open">Aç</system:String>
+    <system:String x:Key="Btn_Close">Kapat</system:String>
+    <system:String x:Key="Btn_Delete">Sil</system:String>
+    <system:String x:Key="Btn_Save">Kaydet</system:String>
+    <system:String x:Key="Btn_Cancel">İptal</system:String>
+    <system:String x:Key="Tip_History">Gezinme geçmişi</system:String>
+    <system:String x:Key="Tip_Home">Ana sayfa (DuckDuckGo)</system:String>
+    <system:String x:Key="Tip_AddBookmark">Yer imi ekle</system:String>
+    <system:String x:Key="Tip_Bookmarks">Yer imleri</system:String>
+    <system:String x:Key="Guard_Title">Yönlendirme koruması</system:String>
+    <system:String x:Key="Guard_Text" xml:space="preserve">Site sizi yönlendirmeye çalışıyor:&#x0a;&#x0a;{0}&#x0a;  →  {1}&#x0a;&#x0a;Geçişe izin verilsin mi?</system:String>
+    <system:String x:Key="Msg_Title">Yer imleri</system:String>
+    <system:String x:Key="Msg_UrlMissing">Sayfa adresini girin.</system:String>
+    <system:String x:Key="Msg_AlreadyExists">Bu yer imi zaten var veya adres geçersiz.</system:String>
+</ResourceDictionary>

@@ -8,6 +8,9 @@ namespace Vetale_Browser_Lite
 {
     public partial class MainWindow : Window
     {
+        private const string HomeUrl = "https://duckduckgo.com/";
+        private readonly RedirectGuardRequestHandler _redirectGuard = new();
+
         private ChromiumWebBrowser CefBrowser => (ChromiumWebBrowser)Browser;
 
         public MainWindow()
@@ -15,11 +18,18 @@ namespace Vetale_Browser_Lite
             InitializeComponent();
 
             CefBrowser.LifeSpanHandler = new CustomLifeSpanHandler();
+            CefBrowser.RequestHandler = _redirectGuard;
+            CefBrowser.DisplayHandler = new VetaleDisplayHandler();
 
             BackButton.Click += (s, e) => { if (CefBrowser.CanGoBack) CefBrowser.Back(); };
             ForwardButton.Click += (s, e) => { if (CefBrowser.CanGoForward) CefBrowser.Forward(); };
             RefreshButton.Click += (s, e) => CefBrowser.Reload();
             GoButton.Click += (s, e) => Navigate(AddressBar.Text);
+            HistoryButton.Click += (s, e) => new HistoryWindow { Owner = this }.ShowDialog();
+            HomeButton.Click += (s, e) => Navigate(HomeUrl);
+            LocalizationManager.LanguageChanged += (s, e) => Dispatcher.Invoke(RefreshLanguageButtons);
+            RefreshLanguageButtons();            AddBookmarkButton.Click += (s, e) => new AddBookmarkWindow(CefBrowser.Title, AddressBar.Text) { Owner = this }.ShowDialog();
+            BookmarksButton.Click += (s, e) => new BookmarksWindow { Owner = this }.ShowDialog();
 
             AddressBar.KeyDown += (s, e) =>
             {
@@ -41,7 +51,16 @@ namespace Vetale_Browser_Lite
                 Dispatcher.Invoke(() => AddressBar.Text = e.NewValue as string ?? string.Empty);
             };
 
-            Navigate("https://lite.duckduckgo.com/lite");
+            CefBrowser.FrameLoadEnd += (s, e) =>
+            {
+                if (e.Frame?.IsMain == true)
+                {
+                    var url = e.Url;
+                    Dispatcher.Invoke(() => HistoryWindow.Add(url, CefBrowser.Title));
+                }
+            };
+
+            Navigate(HomeUrl);
         }
 
         // Window control handlers
@@ -77,6 +96,37 @@ namespace Vetale_Browser_Lite
             WindowState = (WindowState == WindowState.Maximized) ? WindowState.Normal : WindowState.Maximized;
         }
 
+        private void LanguageButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is System.Windows.Controls.Button b && b.Tag is string lang)
+                LocalizationManager.Apply(lang);
+        }
+
+        private void RefreshLanguageButtons()
+        {
+            MarkLanguageButton(LangUkButton, "uk");
+            MarkLanguageButton(LangEnButton, "en");
+            MarkLanguageButton(LangDeButton, "de");
+            MarkLanguageButton(LangRuButton, "ru");
+            MarkLanguageButton(LangTrButton, "tr");
+        }
+
+        private void MarkLanguageButton(System.Windows.Controls.Button b, string lang)
+        {
+            if (b == null)
+                return;
+            bool active = string.Equals(LocalizationManager.Current, lang, StringComparison.OrdinalIgnoreCase);
+            b.Opacity = active ? 1.0 : 0.55;
+            b.BorderThickness = active ? new Thickness(1.5) : new Thickness(0);
+            b.BorderBrush = active ? System.Windows.Media.Brushes.White : null;
+        }
+
+        public void NavigateTo(string url)
+        {
+            _redirectGuard.MarkUserNavigation(url);
+            CefBrowser.Load(url);
+        }
+
         private void Navigate(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
@@ -93,10 +143,10 @@ namespace Vetale_Browser_Lite
             if (uri == null)
             {
                 var q = Uri.EscapeDataString(input);
-                uri = new Uri("https://lite.duckduckgo.com/lite?q=" + q);
+                uri = new Uri("https://duckduckgo.com/?q=" + q);
             }
 
-            CefBrowser.Load(uri.AbsoluteUri);
+            NavigateTo(uri.AbsoluteUri);
         }
     }
 

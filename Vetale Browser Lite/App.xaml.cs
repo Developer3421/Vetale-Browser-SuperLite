@@ -18,9 +18,11 @@ namespace Vetale_Browser_Lite
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+            LocalizationManager.Initialize();
+
             base.OnStartup(e);
 
-            if (!Cef.IsInitialized)
+            if (Cef.IsInitialized != true)
             {
                 var settings = new CefSettings
                 {
@@ -48,7 +50,7 @@ namespace Vetale_Browser_Lite
 
         protected override void OnExit(ExitEventArgs e)
         {
-            if (Cef.IsInitialized)
+            if (Cef.IsInitialized == true)
             {
                 Cef.Shutdown();
             }
