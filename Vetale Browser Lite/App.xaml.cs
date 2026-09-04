@@ -97,6 +97,7 @@ namespace Vetale_Browser_Lite
             // DIRECT3D / ANGLE
             // ============================================================
 
+            // D3D11: default stable backend.
             settings.CefCommandLineArgs.Add(
                 "use-angle",
                 "d3d11");
@@ -189,6 +190,10 @@ namespace Vetale_Browser_Lite
             settings.CefCommandLineArgs.Add(
                 "max-tiles-for-interest-area",
                 "512");
+
+            settings.CefCommandLineArgs.Add(
+                "enable-smooth-scrolling",
+                "1");
 
 
             // ============================================================

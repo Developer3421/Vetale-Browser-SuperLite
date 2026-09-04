@@ -8,11 +8,11 @@ using System.Collections.ObjectModel;
 
 namespace Vetale_Browser_Lite
 {
-    /// <summary>DB #2 — bookmarks (encrypted sharded LiteDB).</summary>
+    /// <summary>DB #2 — bookmarks (encrypted SQLite).</summary>
     public static class BookmarkStore
     {
         private const string Collection = "bookmarks";
-        private static readonly ShardedEncryptedDb Db = new("bookmarks");
+        private static readonly SqliteDb Db = new("bookmarks");
 
         private static readonly string LegacyJsonPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
@@ -53,7 +53,7 @@ namespace Vetale_Browser_Lite
                 {
                     foreach (var b in list.Where(b => !string.IsNullOrWhiteSpace(b?.Url)))
                     {
-                        b.Id = LiteDB.ObjectId.NewObjectId();
+                        b.Id = Guid.NewGuid().ToString("N");
                         try { Db.Insert(Collection, b); } catch { }
                     }
                 }
@@ -93,7 +93,7 @@ namespace Vetale_Browser_Lite
         {
             if (entry == null)
                 return;
-            try { Db.Delete<BookmarkEntry>(Collection, entry.Id); } catch { }
+            try { Db.Delete(Collection, entry.Id); } catch { }
             Application.Current?.Dispatcher.Invoke(() => Items.Remove(entry));
         }
     }

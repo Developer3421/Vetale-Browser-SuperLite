@@ -1,12 +1,11 @@
 using System;
-using LiteDB;
 
 namespace Vetale_Browser_Lite
 {
-    /// <summary>DB #3 — redirect-guard decisions log (encrypted sharded LiteDB).</summary>
+    /// <summary>DB #3 — redirect-guard decisions log (encrypted SQLite).</summary>
     public sealed class GuardDecisionEntry
     {
-        public ObjectId Id { get; set; } = ObjectId.NewObjectId();
+        public string Id { get; set; } = Guid.NewGuid().ToString("N");
         public DateTime At { get; set; }
         public string FromHost { get; set; } = string.Empty;
         public string ToHost { get; set; } = string.Empty;
