@@ -1,0 +1,77 @@
+<Window x:Class="Vetale_Browser_Lite.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource Title_About}" Width="500" Height="450"
+        MinWidth="420" MinHeight="360"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        UseLayoutRounding="True">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/DialogStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Border BorderBrush="#30000000" BorderThickness="1" CornerRadius="10" Background="{StaticResource GrayGradient}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title bar (like other dialogs) -->
+            <Border Grid.Row="0" Background="Transparent" CornerRadius="10,10,0,0"
+                    MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <Grid>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="14,0,0,0">
+                        <Image Source="pack://application:,,,/Icons/VetaleSearchIcon.png"
+                               Width="18" Height="18" Stretch="Uniform"
+                               RenderOptions.BitmapScalingMode="HighQuality"
+                               VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <TextBlock FontSize="14" FontWeight="Bold" VerticalAlignment="Center">
+                            <TextBlock.Effect>
+                                <DropShadowEffect ShadowDepth="1" BlurRadius="2" Opacity="0.25" Color="#80808080"/>
+                            </TextBlock.Effect>
+                            <Run Text="{DynamicResource About_TitleA}" Foreground="{StaticResource TitleOrangeBrush}"/>
+                            <Run Text="{DynamicResource About_TitleB}" Foreground="{StaticResource TitlePurpleBrush}"/>
+                        </TextBlock>
+                    </StackPanel>
+                    <Button Tag="pack://application:,,,/Icons/CloseButton.png"
+                            HorizontalAlignment="Right" Margin="0,5,8,5"
+                            Click="CloseButton_Click" Style="{StaticResource DialogTitleCloseButtonStyle}"/>
+                </Grid>
+            </Border>
+
+            <!-- Purple band + white content -->
+            <Border Grid.Row="2" Background="{StaticResource PurpleGradient}" BorderBrush="#30000000"
+                    BorderThickness="0,1,0,1" Margin="8,0" CornerRadius="6">
+                <Border Background="White" CornerRadius="6" Margin="8,6" ClipToBounds="True">
+                    <StackPanel Margin="16,14" VerticalAlignment="Center">
+                        <Image Source="pack://application:,,,/Icons/DefaultTabItem.ico"
+                               Width="64" Height="64" Stretch="Uniform"
+                               RenderOptions.BitmapScalingMode="HighQuality"
+                               HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                        <TextBlock FontSize="20" FontWeight="Bold" TextWrapping="Wrap">
+                            <Run Text="Vetale " Foreground="#FFFF6D00"/>
+                            <Run Text="Browser " Foreground="#FF7C3AED"/>
+                            <Run Text="Super " Foreground="#FFFF6D00"/>
+                            <Run Text="Lite" Foreground="#FF7C3AED"/>
+                        </TextBlock>
+                        <TextBlock Text="{DynamicResource About_Version}" Foreground="#4C1D95" FontSize="13" Margin="0,6,0,0"/>
+                        <TextBlock Text="{DynamicResource About_Description}" Foreground="#4C1D95" FontSize="13" TextWrapping="Wrap" Margin="0,10,0,0"/>
+                        <TextBlock Text="{DynamicResource About_Search}" Foreground="#4C1D95" FontSize="13" TextWrapping="Wrap" Margin="0,10,0,0"/>
+                        <TextBlock Text="{DynamicResource About_Contact}" Foreground="#4C1D95" FontSize="13" Margin="0,10,0,0"/>
+                        <TextBlock Text="{DynamicResource About_Copyright}" Foreground="#4C1D95" FontSize="13" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Border>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="12,8,12,10">
+                <Button Content="{DynamicResource Btn_Close}" Click="CloseButton_Click" IsCancel="True" IsDefault="True" Style="{StaticResource DialogPrimaryButtonStyle}" Margin="0"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

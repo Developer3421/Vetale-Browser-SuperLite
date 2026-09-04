@@ -22,9 +22,24 @@
     <system:String x:Key="Tip_Home">Home (DuckDuckGo)</system:String>
     <system:String x:Key="Tip_AddBookmark">Add bookmark</system:String>
     <system:String x:Key="Tip_Bookmarks">Bookmarks</system:String>
+    <system:String x:Key="Tip_Agreement">User Agreement</system:String>
+    <system:String x:Key="Tip_About">About the app</system:String>
+    <system:String x:Key="Title_About">About the app</system:String>
+    <system:String x:Key="About_TitleA">About the </system:String>
+    <system:String x:Key="About_TitleB">app</system:String>
+    <system:String x:Key="About_Version">Version 1.0.1</system:String>
+    <system:String x:Key="About_Description">A lightweight Windows browser (WPF + .NET, CefSharp/Chromium engine).</system:String>
+    <system:String x:Key="About_Search">Simple DuckDuckGo Lite search.</system:String>
+    <system:String x:Key="About_Contact">Contact: vetalebrowser01@gmail.com</system:String>
+    <system:String x:Key="About_Copyright">© 2026 Vetale Browser SuperLite</system:String>
     <system:String x:Key="Guard_Title">Redirect protection</system:String>
     <system:String x:Key="Guard_Text" xml:space="preserve">The site is trying to redirect you:&#x0a;&#x0a;{0}&#x0a;  →  {1}&#x0a;&#x0a;Allow navigation?</system:String>
     <system:String x:Key="Msg_Title">Bookmarks</system:String>
     <system:String x:Key="Msg_UrlMissing">Enter the page address.</system:String>
-    <system:String x:Key="Msg_AlreadyExists">This bookmark already exists or the address is invalid.</system:String>
+    <system:String x:Key="Title_Agreement">User Agreement</system:String>
+    <system:String x:Key="Agreement_TitleA">User </system:String>
+    <system:String x:Key="Agreement_TitleB">agreement</system:String>
+    <system:String x:Key="Btn_Accept">Accept &amp; Continue</system:String>
+    <system:String x:Key="Btn_Decline">Decline</system:String>
+    <system:String x:Key="Agreement_Body" xml:space="preserve">Vetale Browser SuperLite — User Agreement (v1.0, Dec 27, 2025). Contact: vetalebrowser01@gmail.com&#x0a;&#x0a;By selecting Accept &amp; Continue you confirm that you have read and agree to this Agreement.&#x0a;&#x0a;1. What this App is. A lightweight Windows browser (WPF + .NET, CefSharp/Chromium engine) with simple DuckDuckGo Lite search and safety-first navigation.&#x0a;&#x0a;2. Consent and first launch. On first launch you must click Accept &amp; Continue to use the App. Decline or closing the dialog closes the App. Acceptance is stored locally.&#x0a;&#x0a;3. Online activity. Browsing requires network communication: opening a site connects your device to it; a search sends your query to DuckDuckGo Lite. This is normal browser behavior.&#x0a;&#x0a;4. External services. The only built-in service is DuckDuckGo Lite (https://lite.duckduckgo.com/lite) — their terms and privacy policy apply. Every website you open is a third-party service that may receive your IP, run scripts and store cookies.&#x0a;&#x0a;5. Navigation safety. A clear URL/domain opens directly, anything else becomes a DuckDuckGo Lite search; only http/https are allowed, other schemes are blocked. This reduces accidents but does not guarantee protection.&#x0a;&#x0a;6. Popups. Popups/new windows are blocked; navigation stays in the main window.&#x0a;&#x0a;7. Local data. The App stores data locally on your PC: settings, history (if enabled), cookies/site data, and the agreement acceptance flag. No account is required.&#x0a;&#x0a;8. Security notice. Embedded browser components may have security considerations; full security cannot be guaranteed. You use the App at your own risk: avoid passwords/payments on untrusted sites, keep Windows and antivirus up to date, download only from trusted sources.&#x0a;&#x0a;9. Responsibilities. Use the App lawfully, not for illegal activities; online content may be unsafe.&#x0a;&#x0a;10. Disclaimer. THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES. The developer is not responsible for third-party sites, malware/phishing, or damages from use.&#x0a;&#x0a;11. Updates. The agreement may change in future versions; a significantly updated version may be shown again.&#x0a;&#x0a;12. Contact: vetalebrowser01@gmail.com</system:String>
 </ResourceDictionary>

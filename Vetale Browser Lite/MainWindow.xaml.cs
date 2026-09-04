@@ -102,6 +102,16 @@ namespace Vetale_Browser_Lite
                 LocalizationManager.Apply(lang);
         }
 
+        private void AgreementButton_Click(object sender, RoutedEventArgs e)
+        {
+            new UserAgreementWindow { Owner = this }.ShowDialog();
+        }
+
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            new AboutWindow { Owner = this }.ShowDialog();
+        }
+
         private void RefreshLanguageButtons()
         {
             MarkLanguageButton(LangUkButton, "uk");

@@ -9,9 +9,9 @@
     <RootNamespace>Vetale_Browser_Lite</RootNamespace>
     <AssemblyName>Vetale Browser Lite</AssemblyName>
     <ApplicationIcon>Icons\DefaultTabItem.ico</ApplicationIcon>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <Description>Vetale Browser SuperLite</Description>
     <Company>Vetale</Company>
     <Product>Vetale Browser Lite</Product>

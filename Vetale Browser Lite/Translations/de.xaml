@@ -22,9 +22,24 @@
     <system:String x:Key="Tip_Home">Startseite (DuckDuckGo)</system:String>
     <system:String x:Key="Tip_AddBookmark">Lesezeichen hinzufügen</system:String>
     <system:String x:Key="Tip_Bookmarks">Lesezeichen</system:String>
+    <system:String x:Key="Tip_Agreement">Nutzervereinbarung</system:String>
+    <system:String x:Key="Tip_About">Über die App</system:String>
+    <system:String x:Key="Title_About">Über die App</system:String>
+    <system:String x:Key="About_TitleA">Über die </system:String>
+    <system:String x:Key="About_TitleB">App</system:String>
+    <system:String x:Key="About_Version">Version 1.0.1</system:String>
+    <system:String x:Key="About_Description">Ein schlanker Windows-Browser (WPF + .NET, CefSharp/Chromium-Engine).</system:String>
+    <system:String x:Key="About_Search">Einfache DuckDuckGo-Lite-Suche.</system:String>
+    <system:String x:Key="About_Contact">Kontakt: vetalebrowser01@gmail.com</system:String>
+    <system:String x:Key="About_Copyright">© 2026 Vetale Browser SuperLite</system:String>
     <system:String x:Key="Guard_Title">Umleitungsschutz</system:String>
     <system:String x:Key="Guard_Text" xml:space="preserve">Die Seite möchte Sie umleiten:&#x0a;&#x0a;{0}&#x0a;  →  {1}&#x0a;&#x0a;Weiterleitung zulassen?</system:String>
     <system:String x:Key="Msg_Title">Lesezeichen</system:String>
     <system:String x:Key="Msg_UrlMissing">Geben Sie die Seitenadresse an.</system:String>
-    <system:String x:Key="Msg_AlreadyExists">Dieses Lesezeichen existiert bereits oder die Adresse ist ungültig.</system:String>
+    <system:String x:Key="Title_Agreement">Nutzervereinbarung</system:String>
+    <system:String x:Key="Agreement_TitleA">Nutzer</system:String>
+    <system:String x:Key="Agreement_TitleB">vereinbarung</system:String>
+    <system:String x:Key="Btn_Accept">Akzeptieren &amp; fortfahren</system:String>
+    <system:String x:Key="Btn_Decline">Ablehnen</system:String>
+    <system:String x:Key="Agreement_Body" xml:space="preserve">Vetale Browser SuperLite — Nutzervereinbarung (v1.0, 27.12.2025). Kontakt: vetalebrowser01@gmail.com&#x0a;&#x0a;Mit «Akzeptieren &amp; fortfahren» bestätigen Sie, diese Vereinbarung gelesen zu haben und ihr zuzustimmen.&#x0a;&#x0a;1. Was diese App ist. Ein schlanker Windows-Browser (WPF + .NET, CefSharp/Chromium-Engine) mit einfacher DuckDuckGo-Lite-Suche und sicherer Navigation.&#x0a;&#x0a;2. Zustimmung und erster Start. Beim ersten Start müssen Sie «Akzeptieren &amp; fortfahren» klicken. Bei Ablehnung oder Schließen des Dialogs wird die App geschlossen. Die Zustimmung wird lokal gespeichert.&#x0a;&#x0a;3. Online-Aktivität. Surfen erfordert Netzwerkkommunikation: Eine Website zu öffnen verbindet Ihr Gerät mit ihr; eine Suche sendet Ihre Anfrage an DuckDuckGo Lite. Das ist normales Browserverhalten.&#x0a;&#x0a;4. Externe Dienste. Der einzige integrierte Dienst ist DuckDuckGo Lite (https://lite.duckduckgo.com/lite) — es gelten dessen Bedingungen und Datenschutz. Jede besuchte Website ist ein Drittanbieter, der Ihre IP erhalten, Skripte ausführen und Cookies speichern kann.&#x0a;&#x0a;5. Navigationssicherheit. Eine klare URL/Domain wird direkt geöffnet, alles andere wird eine DuckDuckGo-Lite-Suche; nur http/https sind erlaubt, andere Schemata sind blockiert. Das reduziert Risiken, garantiert aber keinen Schutz.&#x0a;&#x0a;6. Popups. Popups/neue Fenster werden blockiert; die Navigation bleibt im Hauptfenster.&#x0a;&#x0a;7. Lokale Daten. Die App speichert Daten lokal auf Ihrem PC: Einstellungen, Verlauf (falls aktiviert), Cookies/Websitedaten und die Zustimmungskennung. Kein Konto erforderlich.&#x0a;&#x0a;8. Sicherheitshinweis. Eingebettete Browserkomponenten können Sicherheitslücken haben; volle Sicherheit kann nicht garantiert werden. Nutzung auf eigenes Risiko: keine Passwörter/Zahlungsdaten auf unseriösen Seiten, Windows und Antivirus aktuell halten, nur aus vertrauenswürdigen Quellen laden.&#x0a;&#x0a;9. Pflichten. Nutzen Sie die App rechtmäßig, nicht für illegale Aktivitäten; Online-Inhalte können unsicher sein.&#x0a;&#x0a;10. Haftungsausschluss. DIE APP WIRD «WIE BESEHEN» OHNE GEWÄHR BEREITGESTELLT. Der Entwickler haftet nicht für Drittanbieter-Seiten, Malware/Phishing oder Schäden durch die Nutzung.&#x0a;&#x0a;11. Änderungen. Die Vereinbarung kann in künftigen Versionen geändert werden; eine wesentlich geänderte Version wird ggf. erneut angezeigt.&#x0a;&#x0a;12. Kontakt: vetalebrowser01@gmail.com</system:String>
 </ResourceDictionary>

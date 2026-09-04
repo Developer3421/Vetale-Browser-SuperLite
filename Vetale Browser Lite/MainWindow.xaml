@@ -85,8 +85,8 @@
 
         <!-- Button Styles -->
         <Style x:Key="NavigationButtonStyle" TargetType="Button">
-            <Setter Property="Width" Value="30"/>
-            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="36"/>
+            <Setter Property="Height" Value="36"/>
             <Setter Property="Margin" Value="0,0,4,0"/>
             <Setter Property="Background" Value="{StaticResource NavigationButtonBackground}"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -152,7 +152,7 @@
             <Setter Property="Foreground" Value="{StaticResource AddressBarForeground}"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="13"/>
-            <Setter Property="Height" Value="30"/>
+            <Setter Property="Height" Value="36"/>
             <Setter Property="Padding" Value="10,0"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Template">
@@ -182,7 +182,7 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="44"/>
+                <RowDefinition Height="52"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -214,6 +214,26 @@
                     </Border>
                     
                     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,8,0">
+                        <Button x:Name="AgreementButton" ToolTip="{DynamicResource Tip_Agreement}" Style="{StaticResource LanguageButtonStyle}" Click="AgreementButton_Click">
+                            <Viewbox Width="14" Height="14" Stretch="Uniform">
+                                <Canvas Width="24" Height="24">
+                                    <Path Data="M6,2 H14 L19,7 V22 H6 Z" Fill="White" Stroke="#4C1D95" StrokeThickness="1.5"/>
+                                    <Path Data="M14,2 V7 H19" Fill="#FFB14BF4" Stroke="#4C1D95" StrokeThickness="1.5"/>
+                                    <Rectangle Canvas.Left="8.5" Canvas.Top="11" Width="7" Height="1.8" Fill="#FFFF8C00"/>
+                                    <Rectangle Canvas.Left="8.5" Canvas.Top="14.2" Width="7" Height="1.8" Fill="#FF9A1CE8"/>
+                                    <Rectangle Canvas.Left="8.5" Canvas.Top="17.4" Width="4.5" Height="1.8" Fill="#FFFF8C00"/>
+                                </Canvas>
+                            </Viewbox>
+                        </Button>
+                        <Button x:Name="AboutButton" ToolTip="{DynamicResource Tip_About}" Style="{StaticResource LanguageButtonStyle}" Click="AboutButton_Click">
+                            <Viewbox Width="14" Height="14" Stretch="Uniform">
+                                <Canvas Width="24" Height="24">
+                                    <Ellipse Canvas.Left="2" Canvas.Top="2" Width="20" Height="20" Fill="#FF9A1CE8" Stroke="White" StrokeThickness="1.5"/>
+                                    <Rectangle Canvas.Left="11" Canvas.Top="6" Width="2.4" Height="2.4" Fill="#FFFF8C00"/>
+                                    <Rectangle Canvas.Left="11" Canvas.Top="10" Width="2.4" Height="8" Fill="White"/>
+                                </Canvas>
+                            </Viewbox>
+                        </Button>
                         <Button x:Name="LangUkButton" Content="УК" Tag="uk" Style="{StaticResource LanguageButtonStyle}" Click="LanguageButton_Click"/>
                         <Button x:Name="LangEnButton" Content="EN" Tag="en" Style="{StaticResource LanguageButtonStyle}" Click="LanguageButton_Click"/>
                         <Button x:Name="LangDeButton" Content="DE" Tag="de" Style="{StaticResource LanguageButtonStyle}" Click="LanguageButton_Click"/>
@@ -285,7 +305,7 @@
 
                     <Button x:Name="GoButton" Grid.Column="9" 
                             Content="→" 
-                            Width="52" Height="30"
+                             Width="56" Height="36"
                             Margin="6,0,0,0"
                             Background="White"
                             Foreground="#7C3AED"
