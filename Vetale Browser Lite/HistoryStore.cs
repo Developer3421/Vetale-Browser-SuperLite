@@ -6,11 +6,11 @@ using Vetale_Browser_Lite.Data;
 
 namespace Vetale_Browser_Lite
 {
-    /// <summary>DB #1 — browsing history (encrypted sharded LiteDB).</summary>
+    /// <summary>DB #1 — browsing history (encrypted SQLite).</summary>
     public static class HistoryStore
     {
         private const string Collection = "visits";
-        private static readonly ShardedEncryptedDb Db = new("history");
+        private static readonly SqliteDb Db = new("history");
 
         public static ObservableCollection<HistoryEntry> Items { get; } = new();
 

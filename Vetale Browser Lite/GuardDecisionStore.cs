@@ -7,7 +7,7 @@ namespace Vetale_Browser_Lite
     public static class GuardDecisionStore
     {
         private const string Collection = "decisions";
-        private static readonly ShardedEncryptedDb Db = new("guard");
+        private static readonly SqliteDb Db = new("guard");
 
         public static void Log(string fromHost, string toHost, bool allowed)
         {

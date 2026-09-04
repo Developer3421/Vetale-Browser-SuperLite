@@ -7,7 +7,7 @@ namespace Vetale_Browser_Lite
     public static class SettingsStore
     {
         private const string Collection = "settings";
-        private static readonly ShardedEncryptedDb Db = new("settings");
+        private static readonly SqliteDb Db = new("settings");
 
         public static string Get(string key, string defaultValue = "")
         {
