@@ -27,4 +27,20 @@
     <system:String x:Key="Msg_Title">Yer imleri</system:String>
     <system:String x:Key="Msg_UrlMissing">Sayfa adresini girin.</system:String>
     <system:String x:Key="Msg_AlreadyExists">Bu yer imi zaten var veya adres geçersiz.</system:String>
+    <system:String x:Key="Tip_Agreement">Kullanıcı Sözleşmesi</system:String>
+    <system:String x:Key="Tip_About">Uygulama hakkında</system:String>
+    <system:String x:Key="Title_Agreement">Kullanıcı Sözleşmesi</system:String>
+    <system:String x:Key="Agreement_TitleA">Kullanıcı </system:String>
+    <system:String x:Key="Agreement_TitleB">sözleşmesi</system:String>
+    <system:String x:Key="Btn_Accept">Kabul Et ve Devam Et</system:String>
+    <system:String x:Key="Btn_Decline">Reddet</system:String>
+    <system:String x:Key="Agreement_Body" xml:space="preserve">Vetale Browser SuperLite — Kullanıcı Sözleşmesi (v1.0.1, 04.09.2026). İletişim: vetalebrowser01@gmail.com&#x0a;&#x0a;«Kabul Et ve Devam Et» seçeneğini tıklayarak bu Sözleşmeyi okuduğunuzu ve kabul ettiğinizi onaylarsınız.&#x0a;&#x0a;1. Bu uygulama nedir. Basit DuckDuckGo aramalı ve güvenli gezinmeli hafif bir Windows tarayıcısıdır (WPF + .NET, CefSharp/Chromium motoru).&#x0a;&#x0a;2. Çevrimiçi etkinlik. Göz atma ağ bağlantısı gerektirir: bir siteyi açmak cihazınızı o siteye bağlar; arama, sorgunuzu DuckDuckGo'ya gönderir. Bu normal tarayıcı davranışıdır.&#x0a;&#x0a;3. Harici hizmetler. Tek yerleşik hizmet DuckDuckGo'dur (https://duckduckgo.com) — onun koşulları ve gizlilik politikası geçerlidir. Açtığınız her site, IP'nizi alabilen, komut çalıştırabilen ve çerez saklayabilen üçüncü taraf bir hizmettir.&#x0a;&#x0a;4. Gezinme güvenliği. Açık bir URL/alan adı doğrudan açılır, diğer her şey DuckDuckGo araması olur; yalnızca http/https'e izin verilir, diğer şemalar engellenir. Bu riski azaltır ancak tam koruma garanti etmez.&#x0a;&#x0a;5. Açılır pencereler. Açılır pencereler/yeni pencereler engellenir; gezinme ana pencerede kalır.&#x0a;&#x0a;6. Yerel veriler. Uygulama verileri bilgisayarınızda yerel olarak saklar: ayarlar, geçmiş (etkinse), çerezler/site verileri ve sözleşme onay işareti. Hesap gerekmez.&#x0a;&#x0a;7. Güvenlik uyarısı. Gömülü tarayıcı bileşenlerinin güvenlik açıkları olabilir; tam güvenlik garanti edilemez. Uygulamayı kendi sorumluluğunuzda kullanırsınız: güvenilmeyen sitelerde parola/ödeme bilgisi girmeyin, Windows ve antivirüsü güncel tutun, yalnızca güvenilir kaynaklardan indirin.&#x0a;&#x0a;8. Sorumluluklar. Uygulamayı yasalara uygun, yasa dışı işler için olmayacak şekilde kullanın; çevrimiçi içerik güvensiz olabilir.&#x0a;&#x0a;9. Sorumluluk reddi. UYGULAMA GARANTİSİZ OLARAK "OLDUĞU GİBİ" SUNULUR. Geliştirici üçüncü taraf sitelerden, kötü amaçlı yazılım/kimlik avından veya kullanımdan doğan zararlardan sorumlu değildir.&#x0a;&#x0a;10. Güncellemeler. Sözleşme gelecek sürümlerde değişebilir; önemli ölçüde güncellenmiş sürüm yeniden gösterilebilir.&#x0a;&#x0a;11. İletişim: vetalebrowser01@gmail.com</system:String>
+    <system:String x:Key="Title_About">Uygulama hakkında</system:String>
+    <system:String x:Key="About_TitleA">Uygulama </system:String>
+    <system:String x:Key="About_TitleB">hakkında</system:String>
+    <system:String x:Key="About_Version">Sürüm 1.0.1</system:String>
+    <system:String x:Key="About_Description">Hafif bir Windows tarayıcısı (WPF + .NET, CefSharp/Chromium motoru).</system:String>
+    <system:String x:Key="About_Search">Basit DuckDuckGo araması.</system:String>
+    <system:String x:Key="About_Contact">İletişim: vetalebrowser01@gmail.com</system:String>
+    <system:String x:Key="About_Copyright">© 2026 Vetale Browser SuperLite</system:String>
 </ResourceDictionary>

@@ -1,9 +1,9 @@
 # Vetale Browser SuperLite — User Agreement (English)
 
-**Effective date:** December 27, 2025  
+**Effective date:** September 4, 2026  
 **Product:** Vetale Browser SuperLite ("the App")  
 **Developer contact:** vetalebrowser01@gmail.com  
-**Built-in search service:** DuckDuckGo Lite — https://lite.duckduckgo.com/lite
+**Built-in search service:** DuckDuckGo — https://duckduckgo.com
 
 By selecting **Accept & Continue**, you confirm that you have read and agree to this User Agreement.
 
@@ -15,38 +15,29 @@ Vetale Browser SuperLite is a lightweight desktop web browser for Windows built 
 
 It is designed for simple everyday browsing with:
 - a minimal UI
-- DuckDuckGo Lite search
+- DuckDuckGo search
 - safety-first navigation rules
 
 ---
 
-## 2. Consent and first launch
-
-- On first launch, the App shows a User Agreement dialog.
-- You must click **Accept & Continue** to use the App.
-- If you click **Decline** or close the dialog, the App will close.
-- When accepted, the App stores your acceptance **locally** to avoid showing the consent buttons again.
-
----
-
-## 3. Online activity (how browsing works)
+## 2. Online activity (how browsing works)
 
 Web browsing requires network communication.
 
 When you:
 - open a website → your device connects to that website
-- search → your query is sent to DuckDuckGo Lite
+- search → your query is sent to DuckDuckGo
 
 This is normal browser behavior.
 
 ---
 
-## 4. External services
+## 3. External services
 
-### 4.1 DuckDuckGo Lite (the only built-in service)
+### 3.1 DuckDuckGo (the only built-in service)
 
-The App integrates DuckDuckGo Lite:
-- https://lite.duckduckgo.com/lite
+The App integrates DuckDuckGo:
+- https://duckduckgo.com
 
 When you use search:
 - your search text is sent to DuckDuckGo
@@ -54,7 +45,7 @@ When you use search:
 
 DuckDuckGo is a third-party service. Their own terms and privacy policy apply.
 
-### 4.2 Websites you visit
+### 3.2 Websites you visit
 
 Every website you open is a third-party service.
 
@@ -65,12 +56,12 @@ Websites can:
 
 ---
 
-## 5. Navigation safety behavior
+## 4. Navigation safety behavior
 
 To reduce accidental navigation to suspicious or unintended domains, the address input logic follows this rule:
 
 - If the input looks like a clear **URL/domain** → open it directly
-- Otherwise → perform a **DuckDuckGo Lite** search
+- Otherwise → perform a **DuckDuckGo** search
 
 Additionally:
 - non-web schemes are blocked
@@ -80,7 +71,7 @@ This is a safety feature, but it does not guarantee protection from all threats.
 
 ---
 
-## 6. Popups and new windows
+## 5. Popups and new windows
 
 The App is designed to prevent popups from opening as separate windows.
 
@@ -91,7 +82,7 @@ This is meant to reduce nuisance popups and confusing navigation paths.
 
 ---
 
-## 7. Local data storage
+## 6. Local data storage
 
 The App may store some data **locally on your PC** to operate:
 - basic settings (window size, UI preferences)
@@ -103,7 +94,7 @@ The App does not require you to create an account.
 
 ---
 
-## 8. Security notice (important)
+## 7. Security notice (important)
 
 The App is built on an embedded browser engine (CefSharp/Chromium). Depending on version and platform limitations, embedded browser components may have security considerations.
 
@@ -118,7 +109,7 @@ Safety recommendations:
 
 ---
 
-## 9. User responsibilities
+## 8. User responsibilities
 
 You agree that you will:
 - use the App in compliance with applicable laws
@@ -127,7 +118,7 @@ You agree that you will:
 
 ---
 
-## 10. Disclaimer
+## 9. Disclaimer
 
 THE APP IS PROVIDED **"AS IS"**, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
 
@@ -139,7 +130,7 @@ The developer is not responsible for:
 
 ---
 
-## 11. Updates to this agreement
+## 10. Updates to this agreement
 
 The developer may update this agreement in future versions of the App.
 
@@ -147,14 +138,14 @@ If the agreement changes significantly, the App may show an updated consent scre
 
 ---
 
-## 12. Contact
+## 11. Contact
 
 If you have questions:
 - vetalebrowser01@gmail.com
 
 ---
 
-## 13. Agreement version
+## 12. Agreement version
 
-Version: **1.0**
+Version: **1.0.1**
 

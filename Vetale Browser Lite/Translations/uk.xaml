@@ -27,4 +27,20 @@
     <system:String x:Key="Msg_Title">Закладки</system:String>
     <system:String x:Key="Msg_UrlMissing">Вкажіть адресу сторінки.</system:String>
     <system:String x:Key="Msg_AlreadyExists">Така закладка вже існує або адреса некоректна.</system:String>
+    <system:String x:Key="Tip_Agreement">Угода користувача</system:String>
+    <system:String x:Key="Tip_About">Про додаток</system:String>
+    <system:String x:Key="Title_Agreement">Угода користувача</system:String>
+    <system:String x:Key="Agreement_TitleA">Угода </system:String>
+    <system:String x:Key="Agreement_TitleB">користувача</system:String>
+    <system:String x:Key="Btn_Accept">Прийняти і продовжити</system:String>
+    <system:String x:Key="Btn_Decline">Відхилити</system:String>
+    <system:String x:Key="Agreement_Body" xml:space="preserve">Vetale Browser SuperLite — Угода користувача (v1.0.1, 04.09.2026). Контакт: vetalebrowser01@gmail.com&#x0a;&#x0a;Натискаючи «Прийняти і продовжити», ви підтверджуєте, що прочитали цю Угоду і погоджуєтесь з нею.&#x0a;&#x0a;1. Що це за застосунок. Легкий браузер для Windows (WPF + .NET, рушій CefSharp/Chromium) з простим пошуком DuckDuckGo та безпечною навігацією.&#x0a;&#x0a;2. Мережева активність. Перегляд потребує з'єднання: відкриття сайту з'єднує ваш пристрій із ним; пошук надсилає запит до DuckDuckGo. Це звичайна поведінка браузера.&#x0a;&#x0a;3. Зовнішні сервіси. Єдиний вбудований сервіс — DuckDuckGo (https://duckduckgo.com), діють його умови та політика конфіденційності. Кожен сайт — сторонній сервіс, який може отримувати вашу IP-адресу, виконувати скрипти та зберігати cookies.&#x0a;&#x0a;4. Безпека навігації. Явна URL/домен-адреса відкривається напряму, все інше стає пошуком DuckDuckGo; дозволено лише http/https, інші схеми блокуються. Це зменшує ризик, але не гарантує повного захисту.&#x0a;&#x0a;5. Спливні вікна. Спливні вікна/нові вікна блокуються; навігація залишається в головному вікні.&#x0a;&#x0a;6. Локальні дані. Застосунок зберігає дані локально на вашому ПК: налаштування, історію (якщо увімкнено), cookies/дані сайтів і позначку про прийняття угоди. Обліковий запис не потрібен.&#x0a;&#x0a;7. Зауваження про безпеку. Вбудовані компоненти браузера можуть мати вразливості; повна безпека не гарантується. Ви користуєтесь застосунком на власний ризик: не вводьте паролі/платіжні дані на недовірених сайтах, оновлюйте Windows та антивірус, завантажуйте лише з надійних джерел.&#x0a;&#x0a;8. Обов'язки. Використовуйте застосунок законно, не для протиправних дій; онлайн-контент може бути небезпечним.&#x0a;&#x0a;9. Відмова від відповідальності. ЗАСТОСУНОК НАДАЄТЬСЯ «ЯК Є» БЕЗ ГАРАНТІЙ. Розробник не відповідає за сторонні сайти, шкідливе ПЗ/фішинг чи збитки від використання.&#x0a;&#x0a;10. Оновлення. Угода може змінюватись у майбутніх версіях; суттєво оновлену версію може бути показано повторно.&#x0a;&#x0a;11. Контакт: vetalebrowser01@gmail.com</system:String>
+    <system:String x:Key="Title_About">Про додаток</system:String>
+    <system:String x:Key="About_TitleA">Про </system:String>
+    <system:String x:Key="About_TitleB">додаток</system:String>
+    <system:String x:Key="About_Version">Версія 1.0.1</system:String>
+    <system:String x:Key="About_Description">Легкий браузер для Windows (WPF + .NET, рушій CefSharp/Chromium).</system:String>
+    <system:String x:Key="About_Search">Простий пошук DuckDuckGo.</system:String>
+    <system:String x:Key="About_Contact">Контакт: vetalebrowser01@gmail.com</system:String>
+    <system:String x:Key="About_Copyright">© 2026 Vetale Browser SuperLite</system:String>
 </ResourceDictionary>
