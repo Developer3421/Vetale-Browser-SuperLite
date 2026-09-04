@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Vetale_Browser_Lite.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf.HwndHost;assembly=CefSharp.Wpf"
         xmlns:wpf="clr-namespace:Vetale_Browser_Lite.Wpf"
         Title="Vetale Browser Super Lite"
         Width="1200" Height="800"

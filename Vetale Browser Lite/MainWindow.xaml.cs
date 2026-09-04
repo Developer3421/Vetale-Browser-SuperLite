@@ -2,7 +2,7 @@ using System;
 using System.Windows;
 using System.Windows.Input;
 using CefSharp;
-using CefSharp.Wpf;
+using CefSharp.Wpf.HwndHost;
 
 namespace Vetale_Browser_Lite
 {
@@ -46,17 +46,16 @@ namespace Vetale_Browser_Lite
                 });
             };
 
-            CefBrowser.AddressChanged += (s, e) =>
-            {
-                Dispatcher.Invoke(() => AddressBar.Text = e.NewValue as string ?? string.Empty);
-            };
-
             CefBrowser.FrameLoadEnd += (s, e) =>
             {
                 if (e.Frame?.IsMain == true)
                 {
                     var url = e.Url;
-                    Dispatcher.Invoke(() => HistoryWindow.Add(url, CefBrowser.Title));
+                    Dispatcher.Invoke(() =>
+                    {
+                        AddressBar.Text = url ?? string.Empty;
+                        HistoryWindow.Add(url, CefBrowser.Title);
+                    });
                 }
             };
 
