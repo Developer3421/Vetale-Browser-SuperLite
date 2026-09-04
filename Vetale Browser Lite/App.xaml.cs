@@ -24,9 +24,17 @@ namespace Vetale_Browser_Lite
 
             if (Cef.IsInitialized != true)
             {
+                // Persistent profile like standard browsers: a stable folder in
+                // %LocalAppData% (not the working directory, which may change),
+                // so cache, cookies and sessions survive restarts.
+                var profileDir = System.IO.Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "Vetale Browser SuperLite");
+                System.IO.Directory.CreateDirectory(profileDir);
+
                 var settings = new CefSettings
                 {
-                    CachePath = System.IO.Path.GetFullPath("cache"),
+                    CachePath = System.IO.Path.Combine(profileDir, "cache"),
                     PersistSessionCookies = true,
                     LogSeverity = LogSeverity.Disable,
                     WindowlessRenderingEnabled = false
